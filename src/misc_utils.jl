@@ -69,7 +69,7 @@ export NLSOLVEJL_SETUP
 
 Save element-wise residuals
 ```math
-\frac{ũ}{α+\max{|u₀|,|u₁|}*ρ}
+\\frac{ũ}{α+\\max{|u₀|,|u₁|}*ρ}
 ```
 in `out`.
 """
@@ -89,7 +89,7 @@ end
 
 Calculate element-wise residuals
 ```math
-\frac{ũ}{α+\max{|u₀|,|u₁|}*ρ}.
+\\frac{ũ}{α+\\max{|u₀|,|u₁|}*ρ}.
 ```
 """
 @inline @muladd function calculate_residuals(ũ, u₀, u₁, α, ρ)
